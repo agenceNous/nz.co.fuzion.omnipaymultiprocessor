@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9dc1a9f5941ef6ceacb4e8dec1970ccec27180b0',
+        'reference' => 'c9a3c2490f4f9e9b8d7713403f6850399d2cc828',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9dc1a9f5941ef6ceacb4e8dec1970ccec27180b0',
+            'reference' => 'c9a3c2490f4f9e9b8d7713403f6850399d2cc828',
             'dev_requirement' => false,
         ),
         'cloudcogsio/omnipay-firstatlanticcommerce-gateway' => array(
@@ -104,12 +104,14 @@
             'dev_requirement' => true,
         ),
         'hounddd/omnipay-systempay' => array(
-            'pretty_version' => 'v3.0.1',
-            'version' => '3.0.1.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../hounddd/omnipay-systempay',
-            'aliases' => array(),
-            'reference' => '6eb93ad5c8707ab53fc5f01b64e7aaebef94518a',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'dd09333e2b0c3c5f7433f658aa4342f674c31d83',
             'dev_requirement' => false,
         ),
         'kodova/hamcrest-php' => array(

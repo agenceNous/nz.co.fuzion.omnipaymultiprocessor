@@ -26,6 +26,16 @@ class Gateway extends AbstractGateway
             'testMode' => false,
         );
     }
+    
+    public function getMerchantId()
+    {
+        return $this->getParameter('merchantId');
+    }
+
+    public function setMerchantId($value)
+    {
+        return $this->setParameter('merchantId', $value);
+    }
 
     public function getCertificate()
     {

@@ -16,4 +16,9 @@ class CompletePurchaseRequest extends AbstractRequest
     {
         return $this->response = new CompletePurchaseResponse($this, $data);
     }
+    
+    public function getEndpoint()
+    {
+        return 'https://paiement.systempay.fr/vads-payment/';
+    }
 }
