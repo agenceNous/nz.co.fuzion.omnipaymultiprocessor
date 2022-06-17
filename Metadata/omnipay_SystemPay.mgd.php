@@ -63,11 +63,11 @@ return [
       'name'            => 'omnipay_SystemPay',
       'description'     => 'Omnipay SystemPay Payment Processor',
       'class_name'      => 'Payment_OmnipayMultiProcessor',
-      'user_name_label' => 'shopID', // shopID
+      'user_name_label' => 'Merchant Id', // shopID
       // 'password_label'  => 'unused',
-      'signature_label' => 'Certificat', // certTest/certProd
+      'signature_label' => 'Certificate', // certTest/certProd
       'subject_label'   => 'Algorithm',  // the signature algorithm chosen in the shop configuration
-      'site_url'        => 'Platform URL', // 
+      // 'site_url'        => 'Platform URL', // 
       // ctxMode        => 'PRODUCTION', // PRODUCTION || TEST
       'billing_mode'    => 4,
       'payment_type'    => 1,
