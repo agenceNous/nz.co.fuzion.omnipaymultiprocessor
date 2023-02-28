@@ -574,7 +574,10 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
       'clientIp' => CRM_Utils_System::ipAddress(),
       'returnUrl' => $this->getNotifyUrl(TRUE),
       'cancelUrl' => $this->getCancelUrl($this->getQfKey(), CRM_Utils_Array::value('participantID', $params)),
+      'errorUrl' => $this->getReturnFailUrl($this->getQfKey(), $participantID, $eventID),
       'notifyUrl' => $this->getNotifyUrl(),
+      'refusedUrl' => $this->getReturnFailUrl($this->getQfKey(), $participantID, $eventID),
+      'successUrl' => $this->getReturnSuccessUrl($this->getQfKey()),
       'card' => $this->getCreditCardObjectParams($params),
       'cardReference' => $params['token'] ?? NULL,
       'transactionReference' => $params['token'] ?? NULL,
@@ -1568,7 +1571,7 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
   public function getText($context, $params) {
     switch ($context) {
       case 'contributionPageContinueText' :
-        return ts('Click <strong>Continue</strong> to finalise your payment');
+        return E::ts('Click <strong>Continue</strong> to finalise your payment');
     }
     return parent::getText($context, $params);
   }
