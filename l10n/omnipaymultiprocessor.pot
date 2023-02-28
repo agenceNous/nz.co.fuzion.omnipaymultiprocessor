@@ -1,0 +1,124 @@
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Core/Page/PaymentPage.php
+msgid "Enter your payment details"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Core/Payment/OmnipayMultiProcessor.php
+msgid "Card Name"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Core/Payment/OmnipayMultiProcessor.php
+msgid "Your payment was not successful. Please try again"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Core/Payment/OmnipayMultiProcessor.php
+msgid "The transaction was not processed. The message from the bank was : %1. Please try again"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Core/Payment/OmnipayMultiProcessor.php
+msgid "No currency specified"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Core/Payment/OmnipayMultiProcessor.php
+msgid "Click <strong>Continue</strong> to finalise your payment"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Core/Payment/PaymentExtended.php
+msgid "Transaction Prefix"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Omnipaymultiprocessor/Form/Report/Omnilog.php
+msgid "Report only accessible with administer Payment Processors permission, may contain credentials"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Omnipaymultiprocessor/Form/Report/Omnilog.php
+msgid "System log ID"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Omnipaymultiprocessor/Form/Report/Omnilog.php
+msgid "Message"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Omnipaymultiprocessor/Form/Report/Omnilog.php
+msgid "Detail"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Omnipaymultiprocessor/Form/Report/Omnilog.php
+msgid "Level"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/CRM/Omnipaymultiprocessor/Form/Report/Omnilog.php
+msgid "Timestamp"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/Metadata/omnipay_Cybersource.mgd.php
+msgid "- select -"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/Metadata/omnipay_Cybersource.mgd.php
+msgid "Card Type"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/Metadata/omnipay_Cybersource.mgd.php
+msgid "Card Number"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/Metadata/omnipay_Cybersource.mgd.php
+msgid "Expiration Date"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/Metadata/omnipay_Cybersource.mgd.php
+msgid "Security Code"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/Metadata/omnipay_PaypalRest.mgd.php
+msgid "Payer ID"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/Metadata/omnipay_PaypalRest.mgd.php
+msgid "post_authorize"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/omnipaymultiprocessor.php
+msgid "Omnipay Developer Settings"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/settings/Omnipay.setting.php
+msgid "In test mode the transaction is sent to the test gateway regardless of mode."
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/settings/Omnipay.setting.php
+msgid "Enable test mode for Omnipay"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/settings/Omnipay.setting.php
+msgid "Success is assumed"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/settings/Omnipay.setting.php
+msgid "In omnipay developer mode guzzle tracks requests. In addition test numbers prefill"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/settings/Omnipay.setting.php
+msgid "Enable developer mode for Omnipay"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/settings/Omnipay.setting.php
+msgid "Use hosted mode for Cyber source"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/settings/Omnipay.setting.php
+msgid "Cybersource hosted mode"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/templates/CRM/Core/Page/PaymentPage.tpl
+msgid "Usually the last 3-4 digits in the signature area on the back of the card."
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/templates/CRM/Core/Page/PaymentPage.tpl
+msgid "Please Click the pay now button if you are not automatically redirected"
+msgstr ""
+
+#: www/sud/wp-content/uploads/civicrm/ext/nz.co.fuzion.omnipaymultiprocessor/templates/CRM/Core/Page/PaymentPage.tpl
+msgid "Pay now"
+msgstr ""
+
