@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b7c3e62db4a71348cf356176074083c",
+    "content-hash": "ad4775d994fb90a30ac88e87878854d5",
     "packages": [
         {
             "name": "cloudcogsio/omnipay-firstatlanticcommerce-gateway",
@@ -245,16 +245,16 @@
         },
         {
             "name": "hounddd/omnipay-systempay",
-            "version": "dev-master",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Hounddd/omnipay-systempay.git",
-                "reference": "580b3812635c3923f0cc920c76b51510ca3c8eb0"
+                "reference": "6fc677c670f1dec98292cc725dc826fe6f4eb784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Hounddd/omnipay-systempay/zipball/580b3812635c3923f0cc920c76b51510ca3c8eb0",
-                "reference": "580b3812635c3923f0cc920c76b51510ca3c8eb0",
+                "url": "https://api.github.com/repos/Hounddd/omnipay-systempay/zipball/6fc677c670f1dec98292cc725dc826fe6f4eb784",
+                "reference": "6fc677c670f1dec98292cc725dc826fe6f4eb784",
                 "shasum": ""
             },
             "require": {
@@ -264,7 +264,6 @@
                 "omnipay/tests": "~3.0",
                 "squizlabs/php_codesniffer": "^3"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -293,9 +292,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Hounddd/omnipay-systempay/issues",
-                "source": "https://github.com/Hounddd/omnipay-systempay/tree/master"
+                "source": "https://github.com/Hounddd/omnipay-systempay/tree/v3.0.3"
             },
-            "time": "2022-07-07T09:49:38+00:00"
+            "time": "2023-10-16T16:21:13+00:00"
         },
         {
             "name": "league/iso3166",
@@ -4485,12 +4484,13 @@
         "dioscouri/omnipay-cybersource": 20,
         "fuzion/omnipay-mercanet": 20,
         "razorpay/omnipay-razorpay": 20,
-        "hounddd/omnipay-systempay": 20,
         "omnipay/tests": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "*"
+    },
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.2.0"

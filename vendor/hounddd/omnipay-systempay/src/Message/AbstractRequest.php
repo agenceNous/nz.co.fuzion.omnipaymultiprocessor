@@ -193,7 +193,7 @@ abstract class AbstractRequest extends OmnipayAbstractRequest
      */
     public function getUuid()
     {
-        return $this->setParameter('vads_trans_uuid');
+        return $this->getParameter('vads_trans_uuid');
     }
 
     public function setMetadata(array $value)
