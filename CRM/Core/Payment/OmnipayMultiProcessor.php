@@ -82,7 +82,18 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
    * @var \Civi\Payment\PropertyBag
    */
   protected $propertyBag;
-
+  
+  /**
+   * For PHP8.1
+   * https://www.php.net/manual/en/language.oop5.magic.php#object.serialize
+   * @return array
+   */
+  public function __serialize(): array {
+    $data = (object) get_object_vars($this);
+    $this->cleanupObjectForSerialization($data, TRUE);
+    return (array) $data;
+  }
+  
   /**
    * Serialize, first removing gateway
    *
@@ -91,17 +102,7 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
    * @return string
    */
   public function serialize(): string {
-    $this->cleanupClassForSerialization(TRUE);
-    return serialize(get_object_vars($this));
-  }
-
-  /**
-   * For PHP8.1
-   * https://www.php.net/manual/en/language.oop5.magic.php#object.serialize
-   */
-  public function __serialize(): array {
-    //$this->cleanupClassForSerialization(TRUE);
-    return get_object_vars($this);
+    return serialize($this->serialize());
   }
 
   /**
@@ -113,14 +114,14 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
    */
   public function unserialize($data) {
     $values = unserialize($data);
-    foreach ($values as $key => $value) {
-      $this->$key = $value;
-    }
+    $this->__unserialize($values);
   }
 
   /**
    * For PHP8.1
    * https://www.php.net/manual/en/language.oop5.magic.php#object.unserialize
+   * 
+   * @param array $data
    */
   public function __unserialize(array $data): void {
     foreach ($data as $key => $value) {
@@ -1360,10 +1361,33 @@ class CRM_Core_Payment_OmnipayMultiProcessor extends CRM_Core_Payment_PaymentExt
     $entities = Civi::cache()->get('omnipay_entities_metadata');
     if (!$entities) {
       $entities = [];
-      _omnipaymultiprocessor_civix_populate_entities($entities);
+      $this->populateEntities($entities);
       Civi::cache()->set('omnipay_entities_metadata', $entities);
     }
     return $entities;
+  }
+
+  /**
+   *
+   * Find any *.mgd.php files, merge their content, and return.
+   *
+   * Copied from civix as was being internally used.
+   */
+  private function populateEntities(&$entities) {
+    $mgdFiles = CRM_Utils_File::findFiles(__DIR__, '*.mgd.php');
+    sort($mgdFiles);
+    foreach ($mgdFiles as $file) {
+      $es = include $file;
+      foreach ($es as $e) {
+        if (empty($e['module'])) {
+          $e['module'] = E::LONG_NAME;
+        }
+        if (empty($e['params']['version'])) {
+          $e['params']['version'] = '3';
+        }
+        $entities[] = $e;
+      }
+    }
   }
 
   /**
